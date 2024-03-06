@@ -50,7 +50,7 @@ export const ragBedrockKnowledgeBase = async (sessionId, knowledgeBaseId, query)
         retrieveAndGenerateConfiguration: {
             type: "KNOWLEDGE_BASE",
             knowledgeBaseConfiguration: {
-                knowledgeBaseId: 'E253DWFM0T',
+                knowledgeBaseId: knowledgeBaseId,
                 modelArn: "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-v2:1", // required
             },
         }
@@ -71,7 +71,7 @@ export const retrieveBedrockKnowledgeBase = async (knowledgeBaseId, query) => {
     const session = await fetchAuthSession()
     const client = new BedrockAgentRuntimeClient({ region: "us-east-1", credentials: session.credentials });
     const input = { // RetrieveRequest
-        knowledgeBaseId: 'E253DWFM0T', // required
+        knowledgeBaseId: knowledgeBaseId, // required
         retrievalQuery: { // KnowledgeBaseQuery
             text: query, // required
         },
@@ -94,7 +94,7 @@ export const getBedrockKnowledgeBaseRetriever = async (knowledgeBaseId) => {
 
     const retriever = new AmazonKnowledgeBaseRetriever({
         topK: 10,
-        knowledgeBaseId: 'E253DWFM0T',
+        knowledgeBaseId: knowledgeBaseId,
         region: "us-east-1",
         clientOptions: { credentials: session.credentials }
     })
