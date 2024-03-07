@@ -39,7 +39,7 @@ export default ({llm}) => {
     return (
 
         <Container
-            header={<Header variant="h2">Conversacion</Header>}>
+            header={<Header variant="h2">Conversation</Header>}>
             <Box data-id="chat-window">
             {
                     chat.length ?
@@ -67,7 +67,7 @@ export default ({llm}) => {
                     value={value}
                     disabled={loading}
                     inputMode="text" />
-                <Button fullWidth key={2} loading={loading} onClick={sendText} variant="primary" >Enviar</Button>
+                <Button fullWidth key={2} loading={loading} onClick={sendText} variant="primary" >Submit</Button>
             </SpaceBetween>
         </Container>
     )
