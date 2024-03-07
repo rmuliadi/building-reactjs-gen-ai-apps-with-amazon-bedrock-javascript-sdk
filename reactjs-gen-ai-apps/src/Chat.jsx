@@ -68,7 +68,7 @@ export default ({ llm }) => {
             <SpaceBetween size="xs">
                 {
                     llmResponse !== "" ?
-                        <Container fitHeight header={<strong>Respuesta LLM</strong>}>
+                        <Container fitHeight header={<strong>LLM Response</strong>}>
                             <div dangerouslySetInnerHTML={{ __html: llmResponse }} />
                         </Container> :
                         null
