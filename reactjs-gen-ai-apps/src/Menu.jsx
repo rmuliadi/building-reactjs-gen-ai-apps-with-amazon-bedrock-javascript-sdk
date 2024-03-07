@@ -32,7 +32,7 @@ const Menu = ({ signOut, groups, ...user }) => {
 
       }}
       utilities={[
-        {
+        /*{
           type: "button", text: "Amazon Bedrock", 
           href: "https://aws.amazon.com/bedrock/", external: true, externalIconAriaLabel: " (opens in a new tab)"
         },
@@ -70,7 +70,7 @@ const Menu = ({ signOut, groups, ...user }) => {
             },
           ]
 
-        },
+        },*/
         {
           type: "menu-dropdown",
           text: "You",
