@@ -14,7 +14,7 @@ export const getModel = async () => {
         region: "us-east-1",
         streaming: true,
         credentials: session.credentials,
-        modelKwargs: { max_tokens_to_sample: 1000, temperature: 1 },
+        modelKwargs: {max_tokens_to_sample: 4096, temperature: 0.8, top_p: 0.32, top_k: 175, stop_sequences: []},
     });
     return model;
 };
@@ -93,7 +93,9 @@ export const getBedrockKnowledgeBaseRetriever = async (knowledgeBaseId) => {
     const session = await fetchAuthSession();
 
     const retriever = new AmazonKnowledgeBaseRetriever({
-        topK: 10,
+        temperature:0.8,
+        topP: 0.32,
+        topK: 175,
         knowledgeBaseId: knowledgeBaseId,
         region: "us-east-1",
         clientOptions: { credentials: session.credentials }
