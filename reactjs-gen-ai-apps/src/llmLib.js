@@ -10,7 +10,7 @@ import { BedrockAgentRuntimeClient, RetrieveAndGenerateCommand, RetrieveCommand 
 export const getModel = async () => {
     const session = await fetchAuthSession(); //To get user credential from React
     const model = new Bedrock({
-        model: "anthropic.claude-instant-v1",
+        model: "anthropic.claude-v2.1",
         region: "us-east-1",
         streaming: true,
         credentials: session.credentials,
@@ -51,7 +51,7 @@ export const ragBedrockKnowledgeBase = async (sessionId, knowledgeBaseId, query)
             type: "KNOWLEDGE_BASE",
             knowledgeBaseConfiguration: {
                 knowledgeBaseId: knowledgeBaseId,
-                modelArn: "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-v2:1", // required
+                modelArn: "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-v2.1:1", // required
             },
         }
     }
