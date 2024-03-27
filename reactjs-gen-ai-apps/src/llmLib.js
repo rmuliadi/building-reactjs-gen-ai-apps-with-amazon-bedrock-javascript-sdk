@@ -93,7 +93,7 @@ export const getBedrockKnowledgeBaseRetriever = async (knowledgeBaseId) => {
     const session = await fetchAuthSession();
 
     const retriever = new AmazonKnowledgeBaseRetriever({
-        topK: 100,
+        topK: 10,
         knowledgeBaseId: knowledgeBaseId,
         region: "us-east-1",
         clientOptions: { credentials: session.credentials }
