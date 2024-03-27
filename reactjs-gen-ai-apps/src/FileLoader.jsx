@@ -46,12 +46,12 @@ export default () => {
     return (
         <Header variant="h1"
             actions={value.length ? <SpaceBetween direction="horizontal" size="xs">
-                <Button fullWidth key={2} loading={loading} onClick={processDocuments} variant="primary" >Process Documents</Button>
+                <Button fullWidth key={2} loading={loading} onClick={processDocuments} variant="primary" >procesar documentos</Button>
             </SpaceBetween> : null}
         >
             <FormField key={1}
                 label="Documents (pdf, doc, txt)"
-                description="Pick documents to consult"
+                description="Elija documentos a consultar"
             >
                 <FileUpload
                     onChange={handleOnChange}
