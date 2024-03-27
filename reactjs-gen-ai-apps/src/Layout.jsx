@@ -29,18 +29,18 @@ export default () => {
                     }
                     items={
                         [
-                            {
-                                type: "section", text: "Chat with Amazon Bedrock", items: [
-                                    { type: "link", href: "/llm", text: "Chat Q&A" },
-                                    { type: "link", href: "/chat", text: "Chat with Memory" },
-                                ]
-                            },
-                            { type: "divider" },
+                            //{
+                            //    type: "section", text: "Chat with Amazon Bedrock", items: [
+                            //        { type: "link", href: "/llm", text: "Chat Q&A" },
+                            //        { type: "link", href: "/chat", text: "Chat with Memory" },
+                            //    ]
+                            //},
+                            //{ type: "divider" },
 
                             {
                                 type: "section", text: "Knowledge Bases for Amazon Bedrock", items: [
                                     { type: 'link', text: `Amazon Bedrock Retrieve => LLM`, href: `/retrieve` },
-                                    { type: 'link', text: `Amazon Bedrock Retrieve & Generate`, href: `/retrieveandgenerate` }
+                                    //{ type: 'link', text: `Amazon Bedrock Retrieve & Generate`, href: `/retrieveandgenerate` }
                                 ]
                             },
                             //{ type: "divider" },
