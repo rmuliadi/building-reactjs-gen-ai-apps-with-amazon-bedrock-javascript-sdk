@@ -125,6 +125,11 @@ Answer based on context below
 {context}
 </context>
 
+This is the chat history
+<chat_history>
+{chat_history}
+</chat_history>
+
 
 If you did not get the answer from the context above, just say that you don't know and refer human to Binus Support team.
 Don't try to make up an answer.
