@@ -130,7 +130,7 @@ This is the chat history
 {chat_history}
 </chat_history>
 
-
+Do not include context and chat history in your answer.
 If you did not get the answer from the context above, just say that you don't know and refer human to Binus Support team.
 Don't try to make up an answer.
 Be concise but friendly in your answer and do not mention you get it from the context above.
