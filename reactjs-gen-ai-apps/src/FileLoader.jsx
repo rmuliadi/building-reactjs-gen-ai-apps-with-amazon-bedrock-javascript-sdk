@@ -46,7 +46,7 @@ export default () => {
     return (
         <Header variant="h1"
             actions={value.length ? <SpaceBetween direction="horizontal" size="xs">
-                <Button fullWidth key={2} loading={loading} onClick={processDocuments} variant="primary" >Procesar Documentos</Button>
+                <Button fullWidth key={2} loading={loading} onClick={processDocuments} variant="primary" >Processing Documents</Button>
             </SpaceBetween> : null}
         >
             <FormField key={1}
