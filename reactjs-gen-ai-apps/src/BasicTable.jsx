@@ -24,7 +24,7 @@ export default ({ columnDefinitions, columnDisplay, itemList, rowClick }) => {
         columnDisplay={columnDisplay}
         wrapLines={true}
         onRowClick={rowClick}
-        empty={<Box><SpaceBetween size="m"><b>No hay</b></SpaceBetween></Box>}
+        empty={<Box><SpaceBetween size="m"><b>Empty</b></SpaceBetween></Box>}
         filter={
             <TextFilter
                 filteringText={filteringText}
