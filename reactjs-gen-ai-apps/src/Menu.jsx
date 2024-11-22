@@ -36,7 +36,7 @@ const Menu = ({ signOut, groups, ...user }) => {
           type: "button", text: "Chat With Amazon Bedrock", 
           href: "https://aws.amazon.com/bedrock/", external: true, externalIconAriaLabel: " (opens in a new tab)"
         },
-        {
+        /*{
           type: "button", text: "Langchain.js", 
           href: "https://js.langchain.com/docs/get_started/introduction", 
           external: true, externalIconAriaLabel: " (opens in a new tab)"
@@ -45,14 +45,14 @@ const Menu = ({ signOut, groups, ...user }) => {
           type: "button", text: "This repo", 
           href: "https://github.com/build-on-aws/building-reactjs-gen-ai-apps-with-amazon-bedrock-javascript-sdk", 
           external: true, externalIconAriaLabel: " (opens in a new tab)"
-        },
+        },*/
         {
           type: "menu-dropdown",
           text: "Authors",
           onItemClick: ((e) => { itemClick(e) }),
           iconName: "user-profile",
           items: [
-            {
+            /*{
               id: "Eli",
               text: "Elizabeth Fuentes Leone",
               href: "https://www.linkedin.com/in/lizfue/",
@@ -67,7 +67,7 @@ const Menu = ({ signOut, groups, ...user }) => {
               external: true,
               externalIconAriaLabel:
                 " (opens in new tab)"
-            },
+            },*/
           ]
 
         },
@@ -79,7 +79,7 @@ const Menu = ({ signOut, groups, ...user }) => {
           items: [
             { id: "email", text: user.signInDetails?.loginId },
             {
-              id: "signout", text: "Salir"
+              id: "signout", text: "Sign Out"
             }
           ]
 
